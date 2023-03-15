@@ -1,0 +1,23 @@
+.myDiv {
+  position: relative;  /*Parent MUST be relative*/
+  z-index: 9;
+  background: green;
+  
+  /*Set width/height of the div in 'parent'*/
+  width: 100px;
+  height: 100px;
+}
+.myDiv:before {
+  content: "";
+  position: absolute; /*set 'child' to be absolute*/
+  z-index: -1;  /*Make this lower so text appears in front*/
+  
+  
+  
+  /*You can choose to align it left, right, top or bottom here*/
+  top: 0;
+  right: 0;
+  bottom: 60%;
+  left: 0;
+  background: red;
+}
